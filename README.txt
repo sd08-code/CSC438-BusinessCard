@@ -1,22 +1,34 @@
-Business Card - CSC 438
+Business Card - CSC 438 - Peter Parker
 
-Open the BusinessCard folder in Android Studio. Let Gradle sync, then run app
-on an Android device or emulator (Android 7.0 / API 24 or newer).
+A Jetpack Compose business card inspired by the class Postcard app.
 
-The app uses Jetpack Compose Image, Text, Column and Box, adapting the
-Postcard lesson into a business card. It includes a local geometric logo,
-Alex Morgan, Mobile App Developer, College of Staten Island, and
-alex.morgan@example.com. These are sample contact details.
+Displayed information:
+- Peter Parker
+- Student / Photographer
+- College of Staten Island
+- peter.parker@csi.cuny.edu (fictional sample address, not a verified mailbox)
 
-To personalize the card, edit app/src/main/res/values/strings.xml.
-The layout is in app/src/main/java/com/example/businesscard/MainActivity.kt.
-The logo is in app/src/main/res/drawable/business_logo.xml.
+Design: user-supplied illustrated Peter Parker portrait, blue background,
+red card border and accents, and a light card surface. The portrait is a local
+PNG drawable, so it needs no network connection.
 
-Verification: assembleDebug succeeded and lintDebug completed with no errors.
-Lint reported warnings about the original template dependencies and unused
-colors; some lifecycle dependency lint checks were skipped due to an API
-compatibility warning. The debug APK is included separately.
+Run: extract BusinessCard-project.zip, open its BusinessCard folder in
+Android Studio, let Gradle sync, select an emulator/device, then click Run.
+Android 7.0 / API 24 or newer is required. BusinessCard-debug.apk is the
+matching installable debug build.
 
-No coursework has been submitted.
+Code locations:
+app/src/main/java/com/example/businesscard/MainActivity.kt - layout and colors
+app/src/main/res/values/strings.xml - name, role, college, email, descriptions
+app/src/main/res/drawable-nodpi/peter_parker.png - supplied portrait
 
-Runtime visual verification could not be completed: the Android emulator remained offline. Desktop screenshot capture also timed out.
+GitHub currently stores the project as a ZIP archive. To update it, use
+Add file > Upload files and upload the new archive under the same name.
+Upload the matching APK and README.txt too, then commit the changes.
+GitHub cannot directly edit individual source files inside a ZIP archive.
+
+Validation: debug build and Android lint checks run for this update.
+No coursework submission is performed.
+
+The Friendly Neighborhood heading has been removed.
+
